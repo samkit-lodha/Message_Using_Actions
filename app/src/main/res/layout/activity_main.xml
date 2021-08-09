@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="92sp" />
+
+    <EditText
+        android:id="@+id/senderMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10000"
+        android:inputType="text"
+        android:hint="@string/hintName"
+        android:text="" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="@string/buttonName" />
+
+</LinearLayout>
